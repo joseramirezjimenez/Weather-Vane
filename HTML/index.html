@@ -43,36 +43,35 @@
     </nav>
     <!-- Navbar Ends -->
 
-    <!--Weather Card -->
-
+    <!-- Weather Card Container-->
     <div class="container">
         <div class="row">
-            <div id="template" class="col-xs-12  col-lg-4">
-                <div id="weatherCard"></div>
-                <div>
-                    <!-- Button to remove the card -->
-                    <button type="button" id="remove">X</button>
-                    <!-- Location -->
-                    <h1>Louisville</h1>
-                    <!--Current Tempature-->
-                    <h1>50&#8457</h1> 
-                    <!-- List of Weather Info-->
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Location: Louisville</li>
-                    </ul>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Current Conditions: Overcast</li>
-                    </ul>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">High Temp: 75&#8457</li>
-                        <li class="list-group-item"> Low Temp: 30&#8457</li>
-                        <li class="list-group-item">Chance of Precipition: 40%</li>
-                    </ul>
-                </div>
+        </div>
+    </div>
+    ​
+    <!-- Weather Card Template -->
+    <div id="template" style="display: none;">
+        <div class="col-xs-12 col-lg-4">
+            <div class="weatherCard">
+                <!-- Button to remove the card -->
+                <button type="button" id="remove">X</button>
+                <!-- Location -->
+                <h1>@@city@@</h1>
+                <!-- Current Temperature -->
+                <h1>@@currentTemp@@&#8457</h1>
+                <!-- List of weather info -->
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Location: @@cityState@@</li>
+                    <li class="list-group-item">Current Conditions: @@conditions@@</li>
+                    <li class="list-group-item">High Temp: @@highTemp@@</li>
+                    <li class="list-group-item">Low Temp: @@lowTemp@@</li>
+                    <li class="list-group-item">Chance of Precipitation: @@precipChance@@</li>
+                </ul>
             </div>
         </div>
     </div>
-     
+    </div>
+
     <!-- JQuery, Popper.js, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
