@@ -17,6 +17,62 @@
 
 <body>
 
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Weather Vane</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://darksky.net/forecast/40.7127,-74.0059/us12/en"
+                        target="_blank">Powered by Dark Sky<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://developer.mapquest.com/documentation/geocoding-api/"
+                        target="_blank">MapQuest Geocoding API</a>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="searchBar" class="form-control mr-sm-2" type="search" placeholder="Address/City/Zip">
+                <button id="submit" type="button" class="btn btn-outline-success">Get Weather</button>
+            </form>
+        </div>
+    </nav>
+    <!-- Navbar Ends -->
+
+    <!--Weather Card -->
+
+    <div class="container">
+        <div class="row">
+            <div id="template" class="col-xs-12  col-lg-4">
+                <div id="weatherCard"></div>
+                <div>
+                    <!-- Button to remove the card -->
+                    <button type="button" id="remove">X</button>
+                    <!-- Location -->
+                    <h1>Louisville</h1>
+                    <!--Current Tempature-->
+                    <h1>50&#8457</h1> 
+                    <!-- List of Weather Info-->
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Location: Louisville</li>
+                    </ul>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Current Conditions: Overcast</li>
+                    </ul>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">High Temp: 75&#8457</li>
+                        <li class="list-group-item"> Low Temp: 30&#8457</li>
+                        <li class="list-group-item">Chance of Precipition: 40%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+     
     <!-- JQuery, Popper.js, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -31,28 +87,5 @@
     <!-- Custom JavaScript-->
     <script src="../JS/weather.js"></script>
 
-    <!-- Navbar Starts -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Weather Vane</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://darksky.net/forecast/40.7127,-74.0059/us12/en" target="_blank">Powered by Dark Sky<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://developer.mapquest.com/documentation/geocoding-api/" target="_blank">MapQuest Geocoding API</a>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Address/City/Zip">
-                <button type="button" class="btn btn-outline-info">Get Weather</button>
-            </form>
-        </div>
-        <!-- Navbar Ends -->
-    </nav>
 
 </html>
