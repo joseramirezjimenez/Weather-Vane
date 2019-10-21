@@ -39,7 +39,7 @@ function getWeatherInfo(latitude, longitude, city, state) {
         templateHTML = templateHTML.replace("@@city@@", city)
         //Replace the string "@@currentTemp@@" with the temperature we get back from the API call
         templateHTML = templateHTML.replace("@@currentTemp@@", Math.round(temperature));
-        templateHTML = templateHTML.replace("@@cityState@@", city +  ", " + state);
+        templateHTML = templateHTML.replace("@@cityState@@", city +  " " + state);
         templateHTML = templateHTML.replace("@@conditions@@", conditions);
         templateHTML = templateHTML.replace("@@highTemp@@", Math.round(highTemp) + "%");
         
